@@ -1,0 +1,143 @@
+
+body{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #07222bf6;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    background-color: #0e3646fa;
+    width: 100%;
+    padding: 24px;
+    }
+    
+    .header_logo {
+    width: 65px;
+    height: 65px;
+    }
+
+    .header_logo:hover{
+        transform: scale(1.2);
+    }
+
+    .input-header{
+    width: 260px;
+    height: 20px;
+    border-radius: 8px;
+    position: absolute;
+    right: 36px;
+    }
+
+    .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 36px;
+        margin: 50px;
+      }
+      
+      .pokemon-card {
+        background: #1e1e2f;
+        border-radius: 12px;
+        padding: 1rem;
+        color: white;
+        width: 250px;
+        text-align: center;
+      }
+
+      .pokemon-img{
+        width: 160px;
+      }
+      
+      .types {
+        margin-top: 0.5rem;
+      }
+      
+      .type {
+        padding: 2px 6px;
+        margin: 0 2px;
+        border-radius: 5px;
+        background: #444;
+        font-size: 0.8rem;
+      }
+      
+      .type.fire { background: #F08030; }
+      .type.water { background: #6890F0; }
+      .type.grass { background: #78C850; }
+      /* … weitere Typen nach Bedarf */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 160px;
+    background-color: #0e3646fa;
+    }
+    .footer_logo {
+    width: 150px;
+    }
+    
+    .footer_logo:hover{
+    transform: scale(1.2);
+    }
+    
+    .footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(65, 96, 113);
+    }
