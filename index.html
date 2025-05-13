@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel="icon" href="./img/pikachu.png">
-    <link rel="stylesheet" href="./style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex</title>
+  <link rel="icon" href="./img/pikachu.png" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body onload="loadPokemon()">
-<header class="header">
-<a href="./index.html"><img class="header_logo" src="img/pikachu1.png"></a>Pokedex
-<input class="input-header">
-</header>
 
-<div id="pokedex" class="grid"></div>
-    
-<footer class="footer">
-<a href="index.html"><img class="footer_logo" src="img/DA_logo.svg"></a>
- <div class="footer_content">
-(c) 2025 Developer Akademie GmbH
-</div>
-</footer>
-<script src="./template.js"></script>
-<script src="./script.js"></script>
+  <header class="header">
+    <a href="./index.html">
+      <img class="header_logo" src="img/pikachu1.png" alt="Pikachu Logo" />
+    </a>
+    <span>Pokedex</span>
+    <input class="input-header" placeholder="Suche..." />
+  </header>
+
+  <main>
+    <div id="pokedex" class="grid"></div>
+
+    <div style="text-align: center; margin: 40px;">
+      <button id="loadMoreBtn" onclick="loadPokemon()">Load More</button>
+      <div id="loader" style="display:none; color: white; margin-top: 10px;">Loading...</div>
+    </div>
+  </main>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-content" id="overlayContent"></div>
+    <button onclick="closeOverlay()" class="close-btn">×</button>
+  </div>
+
+  <footer class="footer">
+    <a href="index.html">
+      <img class="footer_logo" src="img/DA_logo.svg" alt="DA Logo" />
+    </a>
+    <div class="footer_content">(c) 2025 Developer Akademie GmbH</div>
+  </footer>
+
+  <script src="./template.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
